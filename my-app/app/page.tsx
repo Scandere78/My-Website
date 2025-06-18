@@ -25,8 +25,6 @@ type Project = {
 };
 
 const Portfolio = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
   const socialLinks = [
     {
       icon: <FaGithub className="w-6 h-6" />,
@@ -254,7 +252,6 @@ const Portfolio = () => {
               <Card
                 key={project.id}
                 className="bg-neutral-800/50 border-none group hover:bg-neutral-800/70 transition-all cursor-pointer overflow-hidden"
-                onClick={() => setSelectedProject(project)}
               >
                 <div className="relative h-48">
                   <Image
