@@ -1,28 +1,13 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaGlobe, FaCode, FaGraduationCap, FaMapMarkerAlt,} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaGlobe, FaCode, FaGraduationCap, FaMapMarkerAlt} from 'react-icons/fa';
 import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiPython, SiGit, SiMongodb, SiPrisma } from 'react-icons/si';
 import Navbar from './components/Navbar';
-
-type Project = {
-  id: number;
-  title: string;
-  description: string;
-  technologies: string[];
-  image: string;
-  link: string;
-  demoUrl?: string;
-  category: string;
-  status: string;
-  startDate: string;
-  endDate?: string;
-  completion: number;
-};
 
 const Portfolio = () => {
   const socialLinks = [
