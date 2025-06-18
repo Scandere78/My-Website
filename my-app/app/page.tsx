@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaGlobe, FaCode, FaGraduationCap, FaBriefcase, FaMapMarkerAlt, FaPhone, FaTimes } from 'react-icons/fa';
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiPython, SiGit, SiMysql, SiPostgresql, SiLinux, SiMongodb, SiPrisma } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaGlobe, FaCode, FaGraduationCap, FaMapMarkerAlt,} from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiPython, SiGit, SiMongodb, SiPrisma } from 'react-icons/si';
 import Navbar from './components/Navbar';
 
 type Project = {
