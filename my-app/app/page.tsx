@@ -53,7 +53,7 @@ const Portfolio = () => {
   const timeline = [
     {
       year: "2025 - 2027",
-      title: "Holberton School - Concepteur développeur d'applications (Bac +4)",
+      title: "Holberton School - Concepteur développeur d&apos;applications (Bac +4)",
       type: "formation",
       description: "Formation en développement web et mobile, spécialisation Full Stack",
       icon: <FaGraduationCap className="w-5 h-5" />,
@@ -108,7 +108,7 @@ const Portfolio = () => {
      {
       id: 3,
       title: "Oceano Adventure 🌊🐠🌴",
-      description: "Site web créé pour promouvoir un jeu d'aventure épique mêlant  logique,  code  et  combats.  Le  site  met  en  avant l'univers du jeu et ses personnages de façon interactive",
+      description: "Site web créé pour promouvoir un jeu d&apos;aventure épique mêlant  logique,  code  et  combats.  Le  site  met  en  avant l&apos;univers du jeu et ses personnages de façon interactive",
       technologies: ["React", "Tailwind CSS", "Django", "C#"],
       image: "/projects/oceano.png",
       link: "#",
