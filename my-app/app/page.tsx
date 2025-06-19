@@ -140,7 +140,7 @@ const Portfolio = () => {
               <p className="text-gray-300 leading-relaxed mb-8 max-w-2xl">
                 Recherche activement une <span className="text-blue-400 font-semibold bg-blue-500/10 px-2 py-1 rounded">ALTERNANCE</span>, un CDI ou un <span className="text-blue-400 font-semibold bg-blue-500/10 px-2 py-1 rounded">STAGE</span>.
                 <br /><br />
-                Je transforme des idées en applications web modernes et performantes, avec une passion pour l'expérience utilisateur et l'excellence technique.
+                Je transforme des idées en applications web modernes et performantes, avec une passion pour l&apos;expérience utilisateur et l&apos;excellence technique.
               </p>
               <div className="flex justify-center md:justify-start items-center gap-4 mb-8">                {socialLinks.map((link, index) => (
                   <HoverCard key={index}>
