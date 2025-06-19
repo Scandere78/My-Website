@@ -5,10 +5,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const navItems = [
-  { id: 'about', label: 'About' },
+  { id: 'about', label: 'A propos' },
   { id: 'skills', label: 'Skills' },
   { id : 'formation', label: 'Parcours'},
-  { id: 'projects', label: 'Projects' },
+  { id: 'projects', label: 'Projets' },
   { id: 'contact', label: 'Contact' }
 ];
 
@@ -52,7 +52,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full top-0 z-50 h-20 transition-all duration-150 backdrop-blur-md ${
+    <nav className={`fixed w-full top-0 z-50 h-20 transition-all duration-100 backdrop-blur-md ${
       scrolled || isMenuOpen || showBio
         ? 'bg-black/5 shadow-lg'
         : 'bg-black/5'
@@ -106,22 +106,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
-      {showBio && (
-        <div className="bio-container absolute left-6 top-20 w-96 bg-black/90 backdrop-blur-md rounded-lg shadow-xl p-6 text-white">
-          <div className="flex items-start space-x-4">
-            <div className="relative w-20 h-20 rounded-full overflow-hidden">
-              <Image
-                src="/projects/MOI.JPG"
-                alt="Profile"
-                fill
-                className="object-cover"
-                sizes="(max-width: 80px) 100vw, 80px"
-              />
-            </div>
-          </div>
-        </div>
-      )}
 
       {isMenuOpen && (
         <div className="px-4 py-2 bg-black/90 backdrop-blur-md md:hidden">

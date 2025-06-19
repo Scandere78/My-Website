@@ -52,28 +52,28 @@ const Portfolio = () => {
 
   const timeline = [
     {
-      year: "2024-2025",
-      title: "Holberton School - Bachelor Architecture des logiciels",
+      year: "2025 - 2027",
+      title: "Holberton School - Concepteur développeur d'applications (Bac +4)",
       type: "formation",
       description: "Formation en développement web et mobile, spécialisation Full Stack",
       icon: <FaGraduationCap className="w-5 h-5" />,
-      location: "Paris"
+      location: " Puteaux 92"
     },
     {
-      year: "2023-2024",
-      title: "CNED",
+      year: "2024 - 2025",
+      title: "Holberton School - Développeur web et mobile (Bac +2)",
       type: "formation",
-      description: "BTS Services informatiques aux organisations - Option SLAM",
+      description: "Formation en développement web et mobile.",
       icon: <FaGraduationCap className="w-5 h-5" />,
-      location: "Poitiers"
+      location: "Puteaux 92"
     },
     {
-      year: "2019-2020",
-      title: "Baccalauréat Sciences de l'Informatique",
+      year: "2020 - 2022",
+      title: "H3 CAMPUS -  BTS Management Commercial Opérationnel  (Bac +2) ",
       type: "formation",
-      description: "Mention Bien",
+      description: "Formation en management et gestion commerciale.",
       icon: <FaGraduationCap className="w-5 h-5" />,
-      location: "Tunisie"
+      location: "Poissy 78"
     }
   ];
 
@@ -93,7 +93,7 @@ const Portfolio = () => {
      {
       id: 2,
       title: "LD Comedy SHOW 🎭🤡🎤",
-      description: "Interface d'analyse de données avec graphiques interactifs et tableaux de bord personnalisables.",
+      description: "LD Comedy Show est une plateforme web innovante de mise en relation entre Talents amateurs et lieux de diffusion comme les bars, cafés-théâtres, scènes ouvertes et petits théâtres.",
       technologies: ["Next.js", "TypeScript", "Prisma", "MongoDB", "Tailwind CSS"],
       image: "/projects/image.png",
       link: "#",
@@ -108,7 +108,7 @@ const Portfolio = () => {
      {
       id: 3,
       title: "Oceano Adventure 🌊🐠🌴",
-      description: "Site web créé pour promouvoir un jeu d’aventure épique mêlant  logique,  code  et  combats.  Le  site  met  en  avant l’univers du jeu et ses personnages de façon interactive",
+      description: "Site web créé pour promouvoir un jeu d'aventure épique mêlant  logique,  code  et  combats.  Le  site  met  en  avant l'univers du jeu et ses personnages de façon interactive",
       technologies: ["React", "Tailwind CSS", "Django", "C#"],
       image: "/projects/oceano.png",
       link: "#",
@@ -132,11 +132,16 @@ const Portfolio = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                Scandere <span className="text-blue-500">Tej</span>
+                Scandere <span className="text-blue-900">TEJ</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">
                 Développeur Full Stack
               </h2>
+              <p className="text-gray-300 leading-relaxed mb-8 max-w-2xl">
+                Recherche activement une <span className="text-blue-400 font-semibold bg-blue-500/10 px-2 py-1 rounded">ALTERNANCE</span>, un CDI ou un <span className="text-blue-400 font-semibold bg-blue-500/10 px-2 py-1 rounded">STAGE</span>.
+                <br /><br />
+                Je transforme des idées en applications web modernes et performantes, avec une passion pour l'expérience utilisateur et l'excellence technique.
+              </p>
               <div className="flex justify-center md:justify-start items-center gap-4 mb-8">                {socialLinks.map((link, index) => (
                   <HoverCard key={index}>
                     <HoverCardTrigger asChild>
@@ -154,17 +159,22 @@ const Portfolio = () => {
                   </HoverCard>
                 ))}
               </div>
-            </div>            <div className="relative w-64 h-64 md:w-96 md:h-96">
+            </div>            
+            <div className="relative w-64 h-64 md:w-96 md:h-96">
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 to-purple-500/30 rounded-full blur-3xl transform -translate-x-2 translate-y-2"></div>
-              <div className="relative rounded-full border-4 border-blue-500/30 overflow-hidden shadow-2xl group">
+              <div className="relative w-full h-full rounded-full border-4 border-blue-500/30 overflow-hidden shadow-2xl group">
                 <Image
-                  src="/MOI.JPG"
+                  src="/profile.JPG"
                   alt="Profile"
                   fill
                   className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
                   style={{ objectPosition: "center 20%" }}
                   priority
                   sizes="(max-width: 768px) 256px, 384px"
+                  onError={(e) => {
+                    console.error('Erreur de chargement de l\'image:', e);
+                    e.currentTarget.src = 'https://via.placeholder.com/400x400?text=Photo';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
@@ -291,7 +301,7 @@ const Portfolio = () => {
                         className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                       >
                         <FaGlobe className="mr-2" />
-                        Demo Live
+                        Site Web
                       </Button>
                     )}
                   </div>
@@ -341,6 +351,41 @@ const Portfolio = () => {
               </CardContent>
             </Card>
 
+             <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 text-3xl text-blue-500">
+                  <FaLinkedin />
+                </div>
+                <h3 className="text-white font-bold mb-2">Linkedin</h3>
+                <a 
+              href="https://www.linkedin.com/in/scandere-tej-a43630297/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-400 transition-colors text-2xl"
+            >
+              Scandere TEJ
+            </a>
+              </CardContent>
+            </Card>
+
+
+            <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 text-3xl text-black">
+                  <FaGithub />
+                </div>
+                <h3 className="text-white font-bold mb-2">Github</h3>
+                <a 
+              href="https://github.com/Scandere78" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-black transition-colors text-2xl"
+            >
+              Scandere78
+            </a>
+              </CardContent>
+            </Card>
+
             <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
               <CardContent className="p-6 text-center">
                 <div className="mb-4 text-3xl text-purple-500">
@@ -361,14 +406,6 @@ const Portfolio = () => {
               className="text-gray-400 hover:text-white transition-colors text-2xl"
             >
               <FaGithub />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/scandere-tej-a43630297/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaLinkedin />
             </a>
           </div>
         </div>
