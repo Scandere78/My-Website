@@ -318,95 +318,71 @@ const Portfolio = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
             Contact
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 text-3xl text-blue-500">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <Card className="bg-white/10 backdrop-blur-lg border-none shadow-2xl rounded-2xl hover:scale-105 hover:shadow-blue-500/30 transition-all duration-300">
+              <CardContent className="p-8 flex flex-col items-center text-center">
+                <div className="mb-4 text-4xl text-blue-500 drop-shadow-lg">
                   <FaEnvelope />
                 </div>
-                <h3 className="text-white font-bold mb-2">Email</h3>
+                <h3 className="text-white font-bold text-lg mb-2 tracking-wide">Email</h3>
                 <a 
                   href="mailto:scanderetejpro@gmail.com" 
-                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                  className="text-blue-300 hover:text-blue-400 font-medium transition-colors break-all"
                 >
                   scanderetejpro@gmail.com
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 text-3xl text-green-500">
+            <Card className="bg-white/10 backdrop-blur-lg border-none shadow-2xl rounded-2xl hover:scale-105 hover:shadow-green-500/30 transition-all duration-300">
+              <CardContent className="p-8 flex flex-col items-center text-center">
+                <div className="mb-4 text-4xl text-green-500 drop-shadow-lg">
                   <FaWhatsapp />
                 </div>
-                <h3 className="text-white font-bold mb-2">WhatsApp</h3>
+                <h3 className="text-white font-bold text-lg mb-2 tracking-wide">WhatsApp</h3>
                 <a 
-                  href="https://wa.me/33650875135" 
+                  href="https://wa.me/33651306697" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-green-300 hover:text-green-400 font-medium transition-colors"
                 >
                   +33 6 50 87 51 35
                 </a>
               </CardContent>
             </Card>
 
-             <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 text-3xl text-blue-500">
-                  <FaLinkedin />
-                </div>
-                <h3 className="text-white font-bold mb-2">Linkedin</h3>
-                <a 
-              href="https://www.linkedin.com/in/scandere-tej-a43630297/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors text-2xl"
-            >
-              Scandere TEJ
-            </a>
-              </CardContent>
-            </Card>
-
-
-            <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 text-3xl text-black">
-                  <FaGithub />
-                </div>
-                <h3 className="text-white font-bold mb-2">Github</h3>
-                <a 
-              href="https://github.com/Scandere78" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-black transition-colors text-2xl"
-            >
-              Scandere78
-            </a>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-neutral-800/50 border-none hover:bg-neutral-800/70 transition-all">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 text-3xl text-purple-500">
+            <Card className="bg-white/10 backdrop-blur-lg border-none shadow-2xl rounded-2xl hover:scale-105 hover:shadow-purple-500/30 transition-all duration-300">
+              <CardContent className="p-8 flex flex-col items-center text-center">
+                <div className="mb-4 text-4xl text-purple-500 drop-shadow-lg">
                   <FaMapMarkerAlt />
                 </div>
-                <h3 className="text-white font-bold mb-2">Localisation</h3>
-                <p className="text-gray-300">Poissy, Ile de France</p>
+                <h3 className="text-white font-bold text-lg mb-2 tracking-wide">Localisation</h3>
+                <p className="text-purple-200 font-medium">Poissy, Ile de France</p>
               </CardContent>
             </Card>
           </div>
 
           {/* Liens sociaux supplémentaires */}
-          <div className="mt-12 flex justify-center gap-6">
-            <a 
-              href="https://github.com/Scandere78" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors text-2xl"
-            >
-              <FaGithub />
-            </a>
+          <div className="mt-12 flex flex-col items-center gap-4">
+            <span className="uppercase text-xs tracking-widest text-gray-400 mb-2">Réseaux</span>
+            <div className="flex justify-center gap-6">
+              <a 
+                href="https://github.com/Scandere78" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors text-3xl"
+              >
+                <FaGithub />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/scandere-tej-a43630297/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-400 transition-colors text-3xl"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
       </section>
